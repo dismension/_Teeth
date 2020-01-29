@@ -1,0 +1,34 @@
+<!--pages/movie/movie.wxml-->
+
+<view class="container">
+    <!--首页-->
+    <scroll-view class='nav-page'>
+        <view class="item-box " wx:for="{{dataList}}" wx:key="item">
+            <!-- 标题层 -->
+            <view class="video-title-box">
+                <view class='video-title'>{{item.title}}</view>
+            </view>
+
+            <!-- 视频图片层 -->
+            <view data-id="{{index}}" class="video-image-box" style="display: {{ _index == index ? 'none' : 'block' }};" bindtap="videoPlay">
+                <view class="video-cover-box">
+                    <image class="video-image" src="{{item.cover}}" mode="aspectFit">
+                    </image>
+                </view>
+                <!-- 视频按钮 -->
+                <image class="video-image-play" src="https://wx2.sinaimg.cn/mw690/007RARhYly1gbaxlk3afjj301s01sdfn.jpg" mode="scaleToFill"></image>
+
+            </view>
+
+            <!-- 视频播放层 -->
+            <video src="{{item.content}}" data-id="{{index}}" class='video' wx:if="{{_index == index}}" objectFit='contain' autoplay='true' controls> </video>
+
+        </view>
+    </scroll-view>
+</view>
+
+<!-- 公众号二维码 -->
+<view class='imagesize'>
+  <image src="/icon/qr_code.png" class='qrcode'   >
+  </image>
+</view>

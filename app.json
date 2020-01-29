@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/clock/clock",
+    "pages/data/data",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b2dffb",
+    "navigationBarTitleText": "云贝健齿",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home_fill.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "线上教学",
+        "iconPath": "icon/video_light.png",
+        "selectedIconPath": "icon/video_fill_light.png"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "text": "刷牙打卡",
+        "iconPath": "icon/register.png",
+        "selectedIconPath": "icon/register_fill.png"
+      },
+      {
+        "pagePath": "pages/data/data",
+        "text": "病例",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my_fill.png"
+      }
+    ]
+  },
+  "sitemaplocation": "sitemap.json",
+  "sitemapLocation": "sitemap.json"
+}
